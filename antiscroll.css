@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-.antiscroll-scrollbar {
+.antiscroll-wrap .antiscroll-scrollbar {
   background: gray;
   background: rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 7px;
@@ -21,26 +21,26 @@
   -o-transition: linear 300ms opacity;
 }
 
-.antiscroll-scrollbar-shown {
+.antiscroll-wrap .antiscroll-scrollbar-shown {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
-.antiscroll-scrollbar-horizontal {
+.antiscroll-wrap .antiscroll-scrollbar-horizontal {
   height: 7px;
   margin-left: 2px;
   bottom: 2px;
   left: 0;
 }
 
-.antiscroll-scrollbar-vertical {
+.antiscroll-wrap .antiscroll-scrollbar-vertical {
   width: 7px;
   margin-top: 2px;
   right: 2px;
   top: 0;
 }
 
-.antiscroll-inner {
+.antiscroll-wrap .antiscroll-inner {
   overflow: scroll;
 }
 
@@ -52,12 +52,12 @@
     causes the width and height rules to be ignored by the browser resulting
     in both native and antiscroll scrollbars appearing at the same time.
  */
-.antiscroll-inner::-webkit-scrollbar {
+.antiscroll-wrap .antiscroll-inner::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-.antiscroll-inner::scrollbar {
+.antiscroll-wrap .antiscroll-inner::scrollbar {
   width: 0;
   height: 0;
 }
